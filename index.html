@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City & Guilds 2921-34 Exam Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>City & Guilds 2921-34</h1>
+    <h2>Electric Vehicle Charging Mock Exam</h2>
+
+    <div class="topbar">
+        <div id="timer">60:00</div>
+        <div id="progress">Question 1 of 40</div>
+    </div>
+
+    <div id="questionBox">
+        <h3 id="question">
+            Loading question...
+        </h3>
+
+        <div id="answers">
+
+            <button class="answer" onclick="selectAnswer('A')">A</button>
+
+            <button class="answer" onclick="selectAnswer('B')">B</button>
+
+            <button class="answer" onclick="selectAnswer('C')">C</button>
+
+            <button class="answer" onclick="selectAnswer('D')">D</button>
+
+        </div>
+
+    </div>
+
+    <div class="navigation">
+
+        <button onclick="previousQuestion()">Previous</button>
+
+        <button onclick="flagQuestion()">Flag</button>
+
+        <button onclick="nextQuestion()">Next</button>
+
+    </div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
